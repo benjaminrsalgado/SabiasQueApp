@@ -79,13 +79,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ebm-xw-tLl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dato Random..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-Y6-aKo">
+                                <rect key="frame" x="24" y="147" width="353" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Jc-yj-N05"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VVD-Y6-aKo" firstAttribute="top" secondItem="8Jc-yj-N05" secondAttribute="top" constant="24" id="OK4-vI-Rrd"/>
+                            <constraint firstItem="8Jc-yj-N05" firstAttribute="trailing" secondItem="VVD-Y6-aKo" secondAttribute="trailing" constant="20" id="hq2-qn-gOD"/>
+                            <constraint firstItem="VVD-Y6-aKo" firstAttribute="leading" secondItem="8Jc-yj-N05" secondAttribute="leading" constant="20" id="ihF-Ck-4Ek"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="factLabel" destination="VVD-Y6-aKo" id="sUO-iw-ntg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOj-0m-GKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="5"/>
+            <point key="canvasLocation" x="1771.7557251908397" y="4.9295774647887329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9BD-8E-wAN">
