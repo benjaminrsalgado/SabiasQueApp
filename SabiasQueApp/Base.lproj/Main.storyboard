@@ -26,6 +26,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.89051711560000002" green="0.34578174350000002" blue="0.89051711560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="musicaPopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MK2-0R-nnQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-dk-Jpl">
                                         <rect key="frame" x="0.0" y="65.333333333333314" width="353" height="49.333333333333343"/>
@@ -34,6 +37,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.27284777160000001" green="0.74229723219999999" blue="0.38318526739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="librosTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgz-2F-Tb0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJ2-TF-qlv">
                                         <rect key="frame" x="0.0" y="130.66666666666669" width="353" height="49.333333333333343"/>
@@ -42,6 +48,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nintendoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lyk-wq-FQM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
