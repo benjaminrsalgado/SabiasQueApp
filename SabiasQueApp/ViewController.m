@@ -18,7 +18,9 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)musicaPopTapped:(id)sender {
-    NSLog(@"Música Pop tapped");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *detailVC = [storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 - (IBAction)librosTapped:(id)sender {
     NSLog(@"Libros tapped");
