@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailViewController : UIViewController
-
+@property (nonatomic, copy) NSString *categoryName;
 @end
 
 NS_ASSUME_NONNULL_END

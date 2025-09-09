@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "DetailViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,14 +19,24 @@
 }
 - (IBAction)musicaPopTapped:(id)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *detailVC = [storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    DetailViewController *detailVC =
+        [storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    detailVC.categoryName = @"Música Pop"; // <-- enviamos la categoría
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 - (IBAction)librosTapped:(id)sender {
-    NSLog(@"Libros tapped");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *detailVC =
+        [storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    detailVC.categoryName = @"Libros";
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 - (IBAction)nintendoTapped:(id)sender {
-    NSLog(@"Nintendo Switch tapped");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *detailVC =
+        [storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    detailVC.categoryName = @"Nintendo Switch";
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 @end
