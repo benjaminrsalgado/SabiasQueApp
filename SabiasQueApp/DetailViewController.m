@@ -64,7 +64,9 @@ static NSString *RandomFactForCategory(NSString *categoryName) {
     self.factLabel.text = RandomFactForCategory(self.categoryName);
 }
 
-
+- (IBAction)otroDatoTapped:(id)sender {
+    self.factLabel.text = RandomFactForCategory(self.categoryName);
+}
 /*
 #pragma mark - Navigation
 

@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DetailViewController : UIViewController
 @property (nonatomic, copy) NSString *categoryName;
 @property (weak, nonatomic) IBOutlet UILabel *factLabel;
+- (IBAction)otroDatoTapped:(id)sender;
 @end
 
 NS_ASSUME_NONNULL_END

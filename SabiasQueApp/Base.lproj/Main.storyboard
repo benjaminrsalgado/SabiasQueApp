@@ -80,19 +80,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dato Random..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-Y6-aKo">
-                                <rect key="frame" x="24" y="147" width="353" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dato Random..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-Y6-aKo">
+                                <rect key="frame" x="20" y="142" width="353" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XZ-wq-Kkc">
+                                <rect key="frame" x="20" y="182" width="353" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ifz-K2-ADT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Otro Dato"/>
+                                <connections>
+                                    <action selector="otroDatoTapped:" destination="uJp-pK-gwu" eventType="touchUpInside" id="s9p-5W-fEc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Jc-yj-N05"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6XZ-wq-Kkc" firstAttribute="leading" secondItem="8Jc-yj-N05" secondAttribute="leading" constant="20" id="BKi-cW-nXG"/>
                             <constraint firstItem="VVD-Y6-aKo" firstAttribute="top" secondItem="8Jc-yj-N05" secondAttribute="top" constant="24" id="OK4-vI-Rrd"/>
+                            <constraint firstItem="8Jc-yj-N05" firstAttribute="trailing" secondItem="6XZ-wq-Kkc" secondAttribute="trailing" constant="20" id="POA-Ji-5SC"/>
                             <constraint firstItem="8Jc-yj-N05" firstAttribute="trailing" secondItem="VVD-Y6-aKo" secondAttribute="trailing" constant="20" id="hq2-qn-gOD"/>
                             <constraint firstItem="VVD-Y6-aKo" firstAttribute="leading" secondItem="8Jc-yj-N05" secondAttribute="leading" constant="20" id="ihF-Ck-4Ek"/>
+                            <constraint firstItem="6XZ-wq-Kkc" firstAttribute="top" secondItem="VVD-Y6-aKo" secondAttribute="bottom" constant="16" id="ryM-Qn-NH5"/>
                         </constraints>
                     </view>
                     <connections>
